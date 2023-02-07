@@ -24,5 +24,22 @@
     i++
     }
     </script>
+
+    <?php
+ $i=1;
+ while ($i<=11){
+     for($a = 0; $a < 5; $a++){
+     for($j = 0; $j < 10; $j++){
+         if($a%2==0){
+             echo("<div class='xanh'></div>");
+         }else{
+             echo("<div class='do'></div>");
+         }
+     }
+     echo("<div style='clear:both'></div>");
+ };
+ $i++;
+ }
+    ?>
 </body>
 </html>
