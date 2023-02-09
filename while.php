@@ -10,7 +10,7 @@
 <body>
     <script>
     var i=1
-    while (i<=11){
+    while (i<=1){
         for(var a = 0; a < 5; a++){
         for(var j = 0; j < 10; j++){
             if(a%2==0){
@@ -25,9 +25,11 @@
     }
     </script>
 
+
     <?php
+    echo "<br>";
  $i=1;
- while ($i<=11){
+ while ($i<=1){
      for($a = 0; $a < 5; $a++){
      for($j = 0; $j < 10; $j++){
          if($a%2==0){
