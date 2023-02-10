@@ -73,10 +73,10 @@
                 # code...
                 break;
         }
-        $Rental_in = $_POST['check_in'] . date("");
+        $Rental_in = $_POST['check_in'];
         $ngay_dat = str_replace("-", "", $Rental_in);
 
-        $Rental_out = $_POST['check_out'] . date("");
+        $Rental_out = $_POST['check_out'];
         $ngay_ve = str_replace("-", "", $Rental_out);
 
         $Tong_ngay = $ngay_ve - $ngay_dat;
@@ -107,6 +107,7 @@
         $Tong_thanh_toan = ($A * $Tong_ngay) + $Meals + $sumary;
         echo "<div class='center'> Bill <br>
             Type room: $Type <br>
+            Rental Hours: $Tong_ngay <br>
             Money for meal: $Meals VND <br>
             Money for services:  $sumary VND <br>
             Total: $Tong_thanh_toan
